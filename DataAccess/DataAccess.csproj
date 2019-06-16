@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190613105449_initial.cs" />
+    <Compile Remove="Migrations\20190613105449_initial.Designer.cs" />
+    <Compile Remove="Migrations\20190613114422_add key entities.cs" />
+    <Compile Remove="Migrations\20190613114422_add key entities.Designer.cs" />
+    <Compile Remove="Migrations\20190613114522_add key entities.cs" />
+    <Compile Remove="Migrations\20190613114522_add key entities.Designer.cs" />
+    <Compile Remove="Migrations\20190613122425_add key entity configs.cs" />
+    <Compile Remove="Migrations\20190613122425_add key entity configs.Designer.cs" />
+    <Compile Remove="Migrations\20190613122621_apply key entity configs.cs" />
+    <Compile Remove="Migrations\20190613122621_apply key entity configs.Designer.cs" />
+    <Compile Remove="Migrations\20190613122852_apply role cfg.cs" />
+    <Compile Remove="Migrations\20190613122852_apply role cfg.Designer.cs" />
+    <Compile Remove="Migrations\20190613123859_add more user cfg.cs" />
+    <Compile Remove="Migrations\20190613123859_add more user cfg.Designer.cs" />
+    <Compile Remove="Migrations\20190613124804_default user data.cs" />
+    <Compile Remove="Migrations\20190613124804_default user data.Designer.cs" />
+    <Compile Remove="Migrations\20190613125642_default user data.cs" />
+    <Compile Remove="Migrations\20190613125642_default user data.Designer.cs" />
+    <Compile Remove="Migrations\20190613131504_add other tables.cs" />
+    <Compile Remove="Migrations\20190613131504_add other tables.Designer.cs" />
+    <Compile Remove="Migrations\20190613132516_add other tables.cs" />
+    <Compile Remove="Migrations\20190613132516_add other tables.Designer.cs" />
+    <Compile Remove="Migrations\20190613140304_add other cfgs.cs" />
+    <Compile Remove="Migrations\20190613140304_add other cfgs.Designer.cs" />
+    <Compile Remove="Migrations\20190613140900_add other cfgs.cs" />
+    <Compile Remove="Migrations\20190613140900_add other cfgs.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>

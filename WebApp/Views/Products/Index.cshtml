@@ -1,0 +1,33 @@
+﻿@model WebApp.Models.CatalogViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Products) {
+        <tr>
+            <td>
+                <img src="~/uploads/@item.ImageName" alt="@item.ImageAlt" height="25" />
+                <b>@item.Name</b>
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Id  }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.Id  }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

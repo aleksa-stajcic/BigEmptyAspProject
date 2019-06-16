@@ -1,0 +1,50 @@
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\API.deps.json
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.json
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.dev.json
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\API.dll
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\API.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\EfCommands.dll
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\EfCommands.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.csprojAssemblyReference.cache
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.csproj.CoreCompileInputs.cache
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.RazorAssemblyInfo.cache
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.RazorAssemblyInfo.cs
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.AssemblyInfoInputs.cache
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.AssemblyInfo.cs
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.RazorTargetAssemblyInfo.cache
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.csproj.CopyComplete
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.dll
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\API\bin\Debug\netcoreapp2.2\API.xml
+C:\Users\Aleksa\source\repos\BigEmpty\API\obj\Debug\netcoreapp2.2\API.xml
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\API.deps.json
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.json
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.dev.json
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\API.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\API.pdb
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\API.xml
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\EfCommands.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\EfCommands.pdb
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.csprojAssemblyReference.cache
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.csproj.CoreCompileInputs.cache
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.RazorAssemblyInfo.cache
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.RazorAssemblyInfo.cs
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.AssemblyInfoInputs.cache
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.AssemblyInfo.cs
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.RazorTargetAssemblyInfo.cache
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.csproj.CopyComplete
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.xml
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\API\obj\Debug\netcoreapp2.2\API.pdb

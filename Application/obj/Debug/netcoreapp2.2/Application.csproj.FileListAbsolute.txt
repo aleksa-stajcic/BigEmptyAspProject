@@ -1,0 +1,9 @@
+C:\Users\Aleksa\source\repos\BigEmpty\Application\bin\Debug\netcoreapp2.2\Application.deps.json
+C:\Users\Aleksa\source\repos\BigEmpty\Application\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Aleksa\source\repos\BigEmpty\Application\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache
+C:\Users\Aleksa\source\repos\BigEmpty\Application\obj\Debug\netcoreapp2.2\Application.csproj.CoreCompileInputs.cache
+C:\Users\Aleksa\source\repos\BigEmpty\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfoInputs.cache
+C:\Users\Aleksa\source\repos\BigEmpty\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfo.cs
+C:\Users\Aleksa\source\repos\BigEmpty\Application\obj\Debug\netcoreapp2.2\Application.dll
+C:\Users\Aleksa\source\repos\BigEmpty\Application\obj\Debug\netcoreapp2.2\Application.pdb

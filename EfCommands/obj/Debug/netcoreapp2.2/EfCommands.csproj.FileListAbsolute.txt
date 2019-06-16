@@ -1,0 +1,32 @@
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.deps.json
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.dll
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csprojAssemblyReference.cache
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CoreCompileInputs.cache
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfoInputs.cache
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfo.cs
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CopyComplete
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.dll
+C:\Users\Aleksa\source\repos\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.pdb
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.deps.json
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.pdb
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csprojAssemblyReference.cache
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CoreCompileInputs.cache
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfoInputs.cache
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfo.cs
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CopyComplete
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.dll
+C:\Users\Aleksa\Desktop\big empty back up\BigEmpty\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.pdb
