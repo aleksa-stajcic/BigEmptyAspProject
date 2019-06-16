@@ -74,8 +74,9 @@ namespace API {
             #region User
             services.AddTransient<ICreateUserCommand, EfCreateUserCommand>();
             services.AddTransient<IDeleteUserCommand, EfDeleteUserCommand>();
-            services.AddTransient<IGetUsersCommand, EfGetUsersCommand>();
+            services.AddTransient<ISearchUsersCommand, EfSearchUsersCommand>();
             services.AddTransient<IEditUserCommand, EfEditUserCommand>();
+            services.AddTransient<IGetUserCommand, EfGetUserCommand>();
             #endregion
 
             #region Role

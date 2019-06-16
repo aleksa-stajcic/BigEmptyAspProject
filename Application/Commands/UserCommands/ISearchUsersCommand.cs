@@ -7,6 +7,6 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Application.Commands.UserCommands {
-    public interface IGetUsersCommand : ICommand<UserSearch, PagedResponse<GetUsersDto>> {
+    public interface ISearchUsersCommand : ICommand<UserSearch, PagedResponse<GetUsersDto>> {
     }
 }

@@ -10,9 +10,9 @@ using System.Linq;
 using System.Text;
 
 namespace EfCommands.EfUserCommands {
-    public class EfGetUsersCommand : BaseEfCommand, IGetUsersCommand {
+    public class EfSearchUsersCommand : BaseEfCommand, ISearchUsersCommand {
 
-        public EfGetUsersCommand(BigEmptyContext context) : base(context) {
+        public EfSearchUsersCommand(BigEmptyContext context) : base(context) {
         }
 
         public PagedResponse<GetUsersDto> Execute(UserSearch request) {

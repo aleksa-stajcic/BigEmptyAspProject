@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Application.Commands.UserCommands;
 using Application.DataTransfer.UserDto;
 using Application.Exceptions;
+using Application.Responses;
+using Application.Searches;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,32 +18,57 @@ namespace API.Controllers {
         private readonly ICreateUserCommand _create;
         private readonly IDeleteUserCommand _delete;
         private readonly IEditUserCommand _edit;
+        private readonly ISearchUsersCommand _search;
+        private readonly IGetUserCommand _get;
 
-        public UsersController(ICreateUserCommand create, IDeleteUserCommand delete, IEditUserCommand edit) {
+        public UsersController(ICreateUserCommand create, IDeleteUserCommand delete, IEditUserCommand edit, ISearchUsersCommand search, IGetUserCommand get) {
             _create = create;
             _delete = delete;
             _edit = edit;
+            _search = search;
+            _get = get;
         }
-
-
-
-
 
         // GET: api/Users
         [HttpGet]
-        public IEnumerable<string> Get() {
-            return new string[] { "value1", "value2" };
+        public ActionResult<PagedResponse<GetUsersDto>> Get([FromQuery]UserSearch search) {
+
+            try {
+
+                var result = _search.Execute(search);
+                return Ok(result);
+
+            } catch(Exception) {
+
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+
         }
 
         // GET: api/Users/5
         [HttpGet("{id}", Name = "Get User")]
-        public string Get(int id) {
-            return "value";
+        public ActionResult<GetUsersDto> Get(int id) {
+
+            try {
+
+                var user = _get.Execute(id);
+
+                return Ok(user);
+
+            } catch(EntityNotFoundException e) {
+
+                return NotFound(e.Message);
+
+            } catch(Exception) {
+
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+
         }
 
         // POST: api/Users
         [HttpPost]
-        public IActionResult Post([FromBody] CreateUserDto dto) {
+        public ActionResult Post([FromBody] CreateUserDto dto) {
 
             try {
 
@@ -66,7 +93,7 @@ namespace API.Controllers {
 
         // PUT: api/Users/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] EditUserDto dto) {
+        public ActionResult Put(int id, [FromBody] EditUserDto dto) {
 
             dto.Id = id;
 
@@ -94,7 +121,7 @@ namespace API.Controllers {
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id) {
+        public ActionResult Delete(int id) {
 
             try {
 
