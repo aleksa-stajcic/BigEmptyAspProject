@@ -4,11 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using API.Email;
 using Application.Commands.CategoryCommands;
 using Application.Commands.ManufacturerCommands;
 using Application.Commands.ProductCommands;
 using Application.Commands.RoleCommands;
 using Application.Commands.UserCommands;
+using Application.Interfaces;
 using DataAccess;
 using EfCommands.EfCategoryCommands;
 using EfCommands.EfManufacturerCommands;
@@ -48,6 +50,11 @@ namespace API {
 
             services.AddDbContext<BigEmptyContext>();
 
+            var section = Configuration.GetSection("Email");
+
+            var sender = new SmtpEmailSender(Int32.Parse(section["port"]), section["host"], section["from"], section["password"]);
+
+            services.AddSingleton<IEmailSender>(sender);
 
             #region Category
             services.AddTransient<ICreateCategoryCommand, EfCreateCategoryCommand>();

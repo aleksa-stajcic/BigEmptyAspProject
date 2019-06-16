@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ using Application.Commands.ProductCommands;
 using Application.DataTransfer.ProductDto;
 using Application.Exceptions;
 using Application.Helpers;
+using Application.Interfaces;
 using Application.Responses;
 using Application.Searches;
 using Microsoft.AspNetCore.Http;
@@ -24,13 +26,18 @@ namespace API.Controllers {
         private readonly ISearchProductsCommand _search;
         private readonly IGetProductCommand _get;
 
-        public ProductsController(ICreateProductCommand create, IDeleteProductCommand delete, IEditProductCommand edit, ISearchProductsCommand search, IGetProductCommand get) {
+        private readonly IEmailSender _sender;
+
+        public ProductsController(ICreateProductCommand create, IDeleteProductCommand delete, IEditProductCommand edit, ISearchProductsCommand search, IGetProductCommand get, IEmailSender sender) {
             _create = create;
             _delete = delete;
             _edit = edit;
             _search = search;
             _get = get;
+            _sender = sender;
         }
+
+
 
         // GET: api/Products
         [HttpGet]
@@ -70,7 +77,7 @@ namespace API.Controllers {
 
         // POST: api/Products
         [HttpPost]
-        public ActionResult Post([FromForm] InsertProduct p) {
+        public ActionResult Post([FromForm] InsertProduct p, [FromForm][EmailAddress]string email) {
 
             var extension = Path.GetExtension(p.Image.FileName);
 
@@ -97,6 +104,13 @@ namespace API.Controllers {
 
                 p.Image.CopyTo(new FileStream(file_path, FileMode.Create));
 
+                if(email != null) {
+                    _sender.Subject = "Product addition.";
+                    _sender.ToEmail = email;
+                    _sender.Body = "Product Successfully added.";
+                    _sender.Send();
+                }
+
                 return StatusCode(StatusCodes.Status201Created);
 
             } catch(EntityNotFoundException e) {
@@ -105,7 +119,7 @@ namespace API.Controllers {
 
             } catch(EntityAlreadyExistsException e) {
 
-                return NotFound(e.Message);
+                return UnprocessableEntity(e.Message);
 
             } catch(Exception) {
 
