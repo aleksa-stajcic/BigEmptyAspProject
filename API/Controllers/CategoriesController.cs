@@ -37,7 +37,7 @@ namespace API.Controllers {
 
         // POST: api/Categories
         [HttpPost]
-        public IActionResult Post([FromQuery] CreateCategoryDto dto) {
+        public ActionResult Post([FromQuery] CreateCategoryDto dto) {
 
             try {
 
@@ -58,7 +58,7 @@ namespace API.Controllers {
 
         // PUT: api/Categories/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] EditCategoryDto dto) {
+        public ActionResult Put(int id, [FromBody] EditCategoryDto dto) {
 
             dto.Id = id;
 
@@ -81,7 +81,7 @@ namespace API.Controllers {
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id) {
+        public ActionResult Delete(int id) {
 
             try {
 

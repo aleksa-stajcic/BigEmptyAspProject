@@ -5,15 +5,16 @@
 }
 
 
+
+
+<h1>Create</h1>
 @if(TempData["error"] != null) {
     <p class="text-danger">@TempData["error"]</p>
 }
-
-<h1>Create</h1>
-
 <h4>CreateProductDto</h4>
 <hr />
 <div class="row">
+
     <div class="col-md-4">
         <form asp-action="Create" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>

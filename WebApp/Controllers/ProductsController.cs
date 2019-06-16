@@ -89,8 +89,8 @@ namespace WebApp.Controllers {
             var extension = Path.GetExtension(p.Image.FileName);
 
             if(!FileUpload.AllowedExtensions.Contains(extension)) {
-                //TempData["error"] = "Image extension is not allowed.";
-                return View();
+                TempData["error"] = "Image extension is not allowed.";
+                RedirectToAction(nameof(Create));
             }
 
             try {
@@ -114,20 +114,20 @@ namespace WebApp.Controllers {
 
                 return RedirectToAction(nameof(Index));
 
-            } catch(EntityNotFoundException) {
+            } catch(EntityNotFoundException e) {
 
-                //TempData["error"] = e.Message;
-                return View();
+                TempData["error"] = e.Message;
+                return RedirectToAction(nameof(Create));
 
-            } catch(EntityAlreadyExistsException) {
+            } catch(EntityAlreadyExistsException e) {
 
-                //TempData["error"] = e.Message;
-                return View();
+                TempData["error"] = e.Message;
+                return RedirectToAction(nameof(Create));
 
             } catch(Exception) {
 
-                //TempData["error"] = e.Message;
-                return View();
+                TempData["error"] = "Something went wrong.";
+                return RedirectToAction(nameof(Create));
             }
         }
 
