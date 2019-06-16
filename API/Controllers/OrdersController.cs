@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Commands.OrderCommands;
 using Application.DataTransfer.OrderDto;
 using Application.Exceptions;
+using Application.Interfaces;
 using Application.Responses;
 using Application.Searches;
 using Microsoft.AspNetCore.Http;
@@ -18,9 +20,12 @@ namespace API.Controllers {
         private readonly ICreateOrderCommand _create;
         private readonly ISearchOrderCommand _search;
 
-        public OrdersController(ICreateOrderCommand create, ISearchOrderCommand search) {
+        private readonly IEmailSender _sender;
+
+        public OrdersController(ICreateOrderCommand create, ISearchOrderCommand search, IEmailSender sender) {
             _create = create;
             _search = search;
+            _sender = sender;
         }
 
         // GET: api/Orders
@@ -52,11 +57,18 @@ namespace API.Controllers {
 
         // POST: api/Orders
         [HttpPost]
-        public ActionResult Post([FromBody] CreateOrderDto dto) {
+        public ActionResult Post([FromBody] CreateOrderDto dto, [FromBody][EmailAddress]string email) {
 
             try {
 
                 _create.Execute(dto);
+
+                if(email != null) {
+                    _sender.Subject = "Order creation.";
+                    _sender.ToEmail = email;
+                    _sender.Body = "Order successfully created.";
+                    _sender.Send();
+                }
 
                 return StatusCode(StatusCodes.Status201Created);
 

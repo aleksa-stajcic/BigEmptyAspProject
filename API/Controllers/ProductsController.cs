@@ -107,7 +107,7 @@ namespace API.Controllers {
                 if(email != null) {
                     _sender.Subject = "Product addition.";
                     _sender.ToEmail = email;
-                    _sender.Body = "Product Successfully added.";
+                    _sender.Body = "Product successfully added.";
                     _sender.Send();
                 }
 
