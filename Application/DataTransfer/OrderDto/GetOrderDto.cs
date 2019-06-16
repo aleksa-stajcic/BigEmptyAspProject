@@ -10,5 +10,6 @@ namespace Application.DataTransfer.OrderDto {
         public decimal TotalPrice { get; set; }
         public IEnumerable<GetOrderDetailsDto> OrderDetails { get; set; }
 
+
     }
 }

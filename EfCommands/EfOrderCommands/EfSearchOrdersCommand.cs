@@ -46,7 +46,8 @@ namespace EfCommands.EfOrderCommands {
                         OrderId = od.OrderId,
                         ProductId = od.ProductId,
                         UnitPrice = od.UnitPrice,
-                        Quantity = od.Quantity
+                        Quantity = od.Quantity,
+                        ProductName = od.Product.Name
                     })
                 }),
                 TotalCount = total_count,
