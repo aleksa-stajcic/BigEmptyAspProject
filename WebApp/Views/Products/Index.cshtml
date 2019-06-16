@@ -16,18 +16,30 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Products) {
-        <tr>
-            <td>
-                <img src="~/uploads/@item.ImageName" alt="@item.ImageAlt" height="25" />
-                <b>@item.Name</b>
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Id  }) |
-                @Html.ActionLink("Details", "Details", new {  id=item.Id  }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.Id  })
-            </td>
-        </tr>
-}
+        @foreach(var item in Model.Products) {
+            <tr>
+                <td>
+                    <img src="~/uploads/@item.ImageName" alt="@item.ImageAlt" height="25" />
+                    <b>@item.Name</b>
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+@if(Model.Response.PagesCount > 1) {
+    <ul class="pagination">
+        @for(var i = 1; i <= Model.Response.PagesCount; i++) {
+            <li class="page-item @(i == Model.Response.CurrentPage ? "active" : "")">
+                <a asp-controller="Products" asp-action="Index" asp-route-pageNumber="@i" class="page-link"
+                   asp-route-perPage="@ViewBag.PerPage">@i</a>
+            </li>
+        }
+    </ul>
+}
+
