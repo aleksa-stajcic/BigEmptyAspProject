@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using API.Email;
 using Application.Commands.CategoryCommands;
 using Application.Commands.ManufacturerCommands;
+using Application.Commands.OrderCommands;
 using Application.Commands.ProductCommands;
 using Application.Commands.RoleCommands;
 using Application.Commands.UserCommands;
@@ -14,6 +15,7 @@ using Application.Interfaces;
 using DataAccess;
 using EfCommands.EfCategoryCommands;
 using EfCommands.EfManufacturerCommands;
+using EfCommands.EfOrderCommands;
 using EfCommands.EfProductCommands;
 using EfCommands.EfRoleCommands;
 using EfCommands.EfUserCommands;
@@ -91,6 +93,13 @@ namespace API {
             services.AddTransient<IEditRoleCommand, EfEditRoleCommand>();
             services.AddTransient<IDeleteRoleCommand, EfDeleteRoleCommand>();
             services.AddTransient<IGetRolesCommand, EfGetRolesCommand>();
+            #endregion
+
+            #region Order
+            services.AddTransient<ICreateOrderCommand, EfCreateOrderCommand>();
+            services.AddTransient<ISearchOrderCommand, EfSearchOrdersCommand>();
+
+            services.AddTransient<ICreateOrderDetailsCommand, EfCreateOrderDetailsCommand>();
             #endregion
 
         }
