@@ -9,6 +9,9 @@ using Application.Responses;
 using Application.Searches;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+/**
+ Testing git and atom
+*/
 
 namespace API.Controllers {
     [Route("api/[controller]")]
